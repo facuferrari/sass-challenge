@@ -1,0 +1,127 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 90px 25px;
+}
+
+@media (min-width: 640px) {
+  .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 975px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 0;
+  }
+}
+
+.cards__item {
+  padding: 50px;
+}
+
+.cards__item > h1 {
+  color: #f2f2f2;
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 35px;
+}
+
+.cards__item > p {
+  line-height: 2;
+  width: 225px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.cards__item:first-child {
+  border-radius: 10px 10px 0 0;
+  background-color: #e38826;
+}
+
+@media (min-width: 640px) {
+  .cards__item:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.cards__item:first-child .link_color {
+  color: #e38826;
+}
+
+.cards__item:nth-child(2) {
+  background-color: #006970;
+}
+
+.cards__item:nth-child(2) .link_color {
+  color: #006970;
+}
+
+.cards__item:last-child {
+  border-radius: 0 0 10px 10px;
+  background-color: #004241;
+}
+
+@media (min-width: 640px) {
+  .cards__item:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.cards__item:last-child .link_color {
+  color: #004241;
+}
+
+.cards__button {
+  display: block;
+  width: 150px;
+  font-size: 13px;
+  padding: 20px 35px;
+  border-radius: 35px;
+  background-color: #f2f2f2;
+  border: 5px black;
+}
+
+.cards__button > a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.cards__button:hover {
+  padding: 18px 33px;
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+}
+
+.cards__button:hover .link_color {
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */
